@@ -24,3 +24,4 @@
 ![github-repo](screenshots/09-github-repo.png)
 
 8. Ветка и pull-request
+![PR](screenshots/10-pull-request.png)
