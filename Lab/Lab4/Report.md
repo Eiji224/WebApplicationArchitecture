@@ -85,3 +85,6 @@
 14. Фильтрация логов
 
 ![log-stats](screenshots/14-log-stats.png)
+
+## Сдача через Pull Request
+![PR](screenshots/15-pull-request.png)
