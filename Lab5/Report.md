@@ -71,3 +71,7 @@ HSTS (HTTP Strict Transport Security) - это заголовок, которы�
 13. Автообновление
 
 ![renew](screenshots/14-renew.png)
+
+# PR на GitHub
+
+![pr](screenshots/15-pull-request.png)
