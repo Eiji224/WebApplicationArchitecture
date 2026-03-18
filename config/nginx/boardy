@@ -1,0 +1,45 @@
+server {
+	server_name boardy.eiji.ai-info.ru;
+
+	root /var/www/boardy;
+
+	index index.html index.htm index.nginx-debian.html;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+
+	access_log /var/log/nginx/boardy-access.log;
+	error_log /var/log/nginx/boardy-error.log;
+
+	error_page 404 /404.html;
+
+    listen [::]:443 ssl ipv6only=on; # managed by Certbot
+    listen 443 ssl; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/boardy.eiji.ai-info.ru/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/boardy.eiji.ai-info.ru/privkey.pem; # managed by Certbot
+    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
+    add_header Strict-Transport-Security "max-age=31536000" always;
+
+        location ~* \.(css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot)$ {
+            expires 1y;
+            add_header Cache-Control "public, immutable" always;
+    
+            access_log off;
+      }
+}
+server {
+    if ($host = boardy.eiji.ai-info.ru) {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+
+	listen 80;
+	server_name boardy.eiji.ai-info.ru;
+
+	listen [::]:80;
+    return 404; # managed by Certbot
+
+
+}
