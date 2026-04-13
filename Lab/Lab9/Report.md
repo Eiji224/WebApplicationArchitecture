@@ -139,3 +139,7 @@ SELECT c.id, c.body, c.created_at, u.name AS author_name
 | Перезагрузка при отправке | да              | нет              | нет              |
 | Защита от XSS | встроенная      | ручная           | встроенная       |
 | Сложность кода | ниже vanilla JS | высокая          | ниже vanilla JS          |
+
+# Pull Request
+
+![pr](screenshots/16-PR.png)
