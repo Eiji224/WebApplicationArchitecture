@@ -1,0 +1,40 @@
+.posts-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 5vh;
+}
+
+.post-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px 0;
+    padding: 20px;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-meta h3 {
+    color: #0c4870;
+}
+
+.post-meta span {
+    color: #869caa;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #125521;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.success-message p strong {
+    color: #165724;
+}

@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #1A5276;
+}
+nav div {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+nav div a {
+    min-width: 110px;
+    text-align: center;
+    padding: 20px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav div span {
+    text-align: center;
+    padding: 20px 10px;
+    color: #7db1d5;
+}
+
+.nav-button-main:hover {
+    background-color: #316383;
+}
+
+.nav-button-secondary:hover {
+    background-color: #164563;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 24px;
+}
